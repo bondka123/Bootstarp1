@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant La Bonne Table</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* Styles personnalisés pour le restaurant */
+        .hero-section {
+            background-image: url('https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=1200&h=600&fit=crop');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 100px 0;
+            text-align: center;
+        }
+        
+        .hero-section h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+        }
+        
+        .menu-item img {
+            height: 200px;
+            object-fit: cover;
+            width: 100%;
+        }
+        
+        .price {
+            color: #dc3545;
+            font-weight: bold;
+            font-size: 1.3rem;
+        }
+        
+        .about-img {
+            height: 300px;
+            object-fit: cover;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- 1. SECTION EN-TÊTE (Navigation) -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <!-- Nom du restaurant à gauche -->
+            <a class="navbar-brand" href="#">Restaurant La Bonne Table</a>
+            
+            <!-- Bouton pour mobile -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <!-- Liens de navigation à droite -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#accueil">Accueil</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#menu">Menu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#apropos">À propos de nous</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 2. SECTION HÉROS -->
+    <section id="accueil" class="hero-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h1>Bienvenue à La Bonne Table</h1>
+                    <p class="lead">Découvrez notre cuisine authentique et savoureuse</p>
+                    <a href="#menu" class="btn btn-warning btn-lg">Voir notre Menu</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3. SECTION MENU -->
+    <section id="menu" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Notre Menu</h2>
+            <!-- Grille Bootstrap pour 3 éléments -->
+            <div class="row">
+                
+                <!-- Élément Menu 1 -->
+                <div class="col-md-4">
+                    <div class="card mb-4">
+                        <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=400&h=200&fit=crop" class="card-img-top menu-item" alt="Salade">
+                        <div class="card-body">
+                            <h5 class="card-title">Salade Méditerranéenne</h5>
+                            <p class="card-text">Salade fraîche avec tomates, olives, feta et vinaigrette maison</p>
+                            <p class="price">12€</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Élément Menu 2 -->
+                <div class="col-md-4">
+                    <div class="card mb-4">
+                        <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ca4b?w=400&h=200&fit=crop" class="card-img-top menu-item" alt="Pizza">
+                        <div class="card-body">
+                            <h5 class="card-title">Pizza Margherita</h5>
+                            <p class="card-text">Pizza traditionnelle avec sauce tomate, mozzarella et basilic frais</p>
+                            <p class="price">16€</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Élément Menu 3 -->
+                <div class="col-md-4">
+                    <div class="card mb-4">
+                        <img src="https://images.unsplash.com/photo-1551782450-a2132b4ba21d?w=400&h=200&fit=crop" class="card-img-top menu-item" alt="Burger">
+                        <div class="card-body">
+                            <h5 class="card-title">Burger Gourmet</h5>
+                            <p class="card-text">Burger de bœuf avec cheddar, salade, tomates et frites maison</p>
+                            <p class="price">18€</p>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. SECTION À PROPOS DE NOUS -->
+    <section id="apropos" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5">À Propos de Nous</h2>
+            <!-- Grille en 2 colonnes -->
+            <div class="row">
+                <!-- Colonne Image -->
+                <div class="col-md-6">
+                    <img src="https://images.unsplash.com/photo-1600565193348-f74bd3c7ccdf?w=500&h=300&fit=crop" class="about-img rounded" alt="Notre restaurant">
+                </div>
+                <!-- Colonne Texte -->
+                <div class="col-md-6">
+                    <h3>Notre Histoire</h3>
+                    <p>Fondé en 2018, le Restaurant La Bonne Table est un établissement familial qui propose une cuisine française authentique dans un cadre chaleureux et convivial.</p>
+                    <p>Notre chef, formé dans les meilleures écoles culinaires, sélectionne avec soin les meilleurs produits locaux pour vous offrir une expérience gastronomique inoubliable.</p>
+                    <p>Que ce soit pour un déjeuner d'affaires, un dîner en famille ou une soirée romantique, notre équipe vous accueille avec le sourire et vous garantit un service de qualité.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. SECTION CONTACT -->
+    <section id="contact" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Contactez-Nous</h2>
+            <div class="row justify-content-center">
+                <div class="col-md-8">
+                    <!-- Formulaire de contact -->
+                    <form>
+                        <div class="row">
+                            <!-- Champ Nom -->
+                            <div class="col-md-6">
+                                <div class="mb-3">
+                                    <label for="nom" class="form-label">Nom</label>
+                                    <input type="text" class="form-control" id="nom" required>
+                                </div>
+                            </div>
+                            <!-- Champ Email -->
+                            <div class="col-md-6">
+                                <div class="mb-3">
+                                    <label for="email" class="form-label">Email</label>
+                                    <input type="email" class="form-control" id="email" required>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Champ Message -->
+                        <div class="mb-3">
+                            <label for="message" class="form-label">Message</label>
+                            <textarea class="form-control" id="message" rows="5" required></textarea>
+                        </div>
+                        <!-- Bouton d'envoi -->
+                        <div class="text-center">
+                            <button type="submit" class="btn btn-primary">Envoyer</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 6. FOOTER -->
+    <footer class="bg-dark text-white py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h5>Restaurant La Bonne Table</h5>
+                    <p>123 Avenue des Gourmets<br>75001 Paris, France</p>
+                </div>
+                <div class="col-md-4">
+                    <h5>Horaires</h5>
+                    <p>Lundi - Vendredi: 12h - 14h, 19h - 22h<br>
+                    Samedi - Dimanche: 12h - 22h</p>
+                </div>
+                <div class="col-md-4">
+                    
+                </div>
+            </div>
+            <hr>
+            <div class="text-center">
+                <p>&copy; 2025 Restaurant La Bonne Table. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
